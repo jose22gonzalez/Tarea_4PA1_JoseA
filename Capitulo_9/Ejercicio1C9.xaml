@@ -1,0 +1,33 @@
+<Window x:Class="Tarea_4PA1_JoseA.Capitulo_9.Ejercicio1C9"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea_4PA1_JoseA.Capitulo_9"
+        mc:Ignorable="d"
+        Title="Ejercicio1C9" Height="500" Width="400">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Left">
+            <Label Content="ProductoID:" Width="200" FontSize="16"/>
+            <TextBox x:Name="ProductoIDTextBox" Width="200" FontSize="16"/>
+
+            <Label Content="Nombre de producto: " Width="200" FontSize="16"/>
+            <TextBox x:Name ="NombreProductoTextBox" Width="200" FontSize="16"/>
+
+            <Label Content="Cantidad de producto: " Width="200" FontSize="16"/>
+            <TextBox x:Name="CantidadProductoTextBox" Width="200" FontSize="16"/>
+
+            <Label Content="Precio de producto: " Width="200" FontSize="16"/>
+            <TextBox x:Name="PrecioProducto" Width="200" FontSize="16"/>
+
+            <StackPanel 
+                        Margin="0,20,0,0"                      
+                        Orientation="Horizontal" 
+                        HorizontalAlignment="Center">
+                    <Button Content="💾Guardar" FontSize="16" Click="GuardarProducto_ClickButton"/>
+                    <Button Content="📑Mostrar" FontSize="16" Click="MostarProductos_ClickButton"/>
+            </StackPanel>
+             <ListBox x:Name="Productos" Height="200" Width="200" FontSize="16"></ListBox>
+        </StackPanel>
+    </Grid>
+</Window>
